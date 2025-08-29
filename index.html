@@ -34,8 +34,7 @@
             <nav>
                 <div class="ess-nav-logo">
                     <a href="https://eastallsoftware.com">
-                        <img src="assets/img/Logo.png" alt="ESS Logo">
-                        <h2>Eastall Software Systems</h2>
+                        <img src="assets/img/ESS-Banner.png" alt="ESS Banner">
                     </a>
                 </div>
                 <div class="ess-nav-tlu">
@@ -43,22 +42,44 @@
                         <li><a href="/services">Service Catalog</a></li>
                         <li><a href="/about">About Us</a></li>
                         <li><a href="/contact">Contact Us</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle">More ▼</a>
+                            <div class="mega-menu">
+                                <div class="mega-menu-column">
+                                    <h3>Management Tools</h3>
+                                    <a href="https://eastallsoftware.com/services/dashboard">Server Dashboard</a>
+                                    <a href="https://eastallsoftware.com/services/panel">Business Panel</a>
+                                    <a href="https://billing.stripe.com/p/login/7sIfZyanQ74m4AUeUU">Billing Portal</a>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Account</h3>
+                                    <a href="https://my.eastallsoftware.com/me">Profile</a>
+                                    <a href="https://my.eastallsoftware.com/me/settings">Settings</a>
+                                    <a href="https://support.eastallsoftware.com">Support</a>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Quick Actions</h3>
+                                    <span class="ess-mode-light material-symbols-outlined">sunny</span>
+                                    <span class="invisible ess-mode-dark material-symbols-outlined">bedtime</span>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <div class="ess-nav-tru">
+                    <input type="text" id="search" name="search" placeholder="SEARCH (COMING SOON)" required minlength="1" maxlength="255" size="20" />
                     <ul>
-                        <label for="search">Search (CTRL + K):</label>
-                        <input type="text" id="search" name="search" required minlength="1" maxlength="255" size="10" />
                         <li><a class="ess-nav-btn ess-btn-1" href="https://my.eastallsoftware.com/signin?from=home">Sign in</a></li>
                         <li><a class="ess-nav-brn ess-btn-2" href="https://my.eastallsoftware.com/getstarted?from=home">Get Started</a></li>
-                        <span class="ess-mode-light material-symbols-outlined">sunny</span>
-                        <span class="ess-mode-dark material-symbols-outlined">bedtime</span>
-                        <span class="ess-shopping-cart material-symbols-outlined">shopping_cart</span>
                     </ul>
+                    <div class="ess-nav-cart ess-nav-tru">
+                        <li class="invisible"><a href="?cart=true"><span class="invisible ess-shopping-cart material-symbols-outlined">shopping_cart</span></a></li>
+                    </div>
                 </div>
 
             </nav>
         </header>
         <div class="ess-body-container"></div>
+    <script>document.querySelectorAll('.invisible').forEach(element => {element.remove();});</script> <!-- Script to remove anything with ".invisible" class -->
     </body>
 </html>
